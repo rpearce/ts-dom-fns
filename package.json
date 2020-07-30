@@ -42,6 +42,8 @@
     "build:cjs": "tsc -p tsconfig.cjs.json",
     "build:esm": "tsc -p tsconfig.esm.json",
     "build:umd": "tsc -p tsconfig.umd.json",
+    "lint": "eslint .",
+    "ci": "run-p lint test build",
     "test": "echo \"not implemented yet\""
   },
   "devDependencies": {
