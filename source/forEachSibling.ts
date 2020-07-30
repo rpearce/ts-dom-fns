@@ -8,8 +8,8 @@ export const forEachSibling: ForEachSibling = (handler, target) => {
   for (let i = 0; i < nodes.length; i++) {
     const el = nodes[i] as HTMLElement
 
-    if (!el) return
-
-    handler(el)
+    if (el && el !== target) {
+      handler(el)
+    }
   }
 }
