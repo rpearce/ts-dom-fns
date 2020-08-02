@@ -1,4 +1,7 @@
 # ts-dom-fns
+
+[![npm version](https://img.shields.io/npm/v/@rpearce/ts-dom-fns.svg)](https://www.npmjs.com/package/@rpearce/ts-dom-fns) [![npm downloads](https://img.shields.io/npm/dm/@rpearce/ts-dom-fns.svg)](https://www.npmjs.com/package/@rpearce/ts-dom-fns) [![bundlephobia size](https://flat.badgen.net/bundlephobia/minzip/@rpearce/ts-dom-fns)](https://bundlephobia.com/result?p=@rpearce/ts-dom-fns)
+
 TypeScript DOM Helper Functions
 
 ## Why?
