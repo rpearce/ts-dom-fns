@@ -42,7 +42,6 @@ or
 * [getStyle](./source/getStyle.ts)
 * [getWindowInnerHeight](./source/getWindowInnerHeight.ts)
 * [getWindowInnerWidth](./source/getWindowInnerWidth.ts)
-* [index](./source/index.ts)
 * [removeAttribute](./source/removeAttribute.ts)
 * [removeChild](./source/removeChild.ts)
 * [removeEventListener](./source/removeEventListener.ts)
