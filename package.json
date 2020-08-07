@@ -3,7 +3,7 @@
     "access": "public"
   },
   "name": "@rpearce/ts-dom-fns",
-  "version": "0.5.1",
+  "version": "1.0.0",
   "license": "BSD-3-Clause",
   "author": "Robert Pearce <me@robertwpearce.com>",
   "contributors": [
