@@ -1,5 +1,5 @@
 export interface RemoveChild {
-  (child: HTMLElement, parent: HTMLElement): void
+  (child: Element, parent: Element): void
 }
 
 export const removeChild: RemoveChild = (child, parent) => {

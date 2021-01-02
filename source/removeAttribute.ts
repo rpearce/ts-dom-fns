@@ -1,5 +1,5 @@
 export interface RemoveAttribute {
-  (attr: string, el: HTMLElement): void
+  (attr: string, el: Element): void
 }
 
 export const removeAttribute: RemoveAttribute = (attr, el) => {

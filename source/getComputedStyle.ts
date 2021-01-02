@@ -1,5 +1,5 @@
 export interface GetComputedStyle {
-  (el: HTMLElement): CSSStyleDeclaration
+  (el: Element): CSSStyleDeclaration
 }
 
 export const getComputedStyle: GetComputedStyle = (el) =>

@@ -1,7 +1,7 @@
-import { PossibleElement } from './customTypes'
+import { PossibleHTMLElement } from './customTypes'
 
 export interface Blur {
-  (el: PossibleElement): void
+  (el: PossibleHTMLElement): void
 }
 
 export const blur: Blur = (el) => {
