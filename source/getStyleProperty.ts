@@ -1,7 +1,7 @@
 import { getStyle } from './getStyle'
 
 export interface GetStyleProperty {
-  (attr: string, el: HTMLElement): string
+  (attr: string, el: HTMLElement | SVGElement): string
 }
 
 export const getStyleProperty: GetStyleProperty = (attr, el) =>

@@ -1,5 +1,5 @@
 export interface GetParentNode {
-  (target: HTMLElement): (Node & ParentNode) | null
+  (target: Element): (Node & ParentNode) | null
 }
 
 export const getParentNode: GetParentNode = (target) => target.parentNode

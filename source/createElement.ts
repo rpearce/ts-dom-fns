@@ -1,5 +1,5 @@
 export interface CreateElement {
-  (type: string): HTMLElement
+  (type: string): Element
 }
 
 export const createElement: CreateElement = (type) =>

@@ -1,5 +1,5 @@
 export interface AppendChild {
-  (child: HTMLElement, parent: HTMLElement): HTMLElement
+  (child: Element, parent: Element): Element
 }
 
 export const appendChild: AppendChild = (child, parent) =>

@@ -3,7 +3,7 @@ export interface SetStyleProperty {
     priority: 'important' | undefined | '',
     propertyName: string,
     value: string,
-    el: HTMLElement
+    el: HTMLElement | SVGElement
   ): void
 }
 
