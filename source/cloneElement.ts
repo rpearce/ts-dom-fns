@@ -1,8 +1,5 @@
-export interface CloneElement {
-  <A extends { cloneNode: (deep?: boolean) => A }>(
-    deep: boolean, el: A
-  ): A
-}
-
-export const cloneElement: CloneElement = (deep = true, el) =>
-  el.cloneNode(deep)
+export const cloneElement = <A extends Element>(
+  deep = true,
+  el: A
+): A =>
+  el.cloneNode(deep) as A
