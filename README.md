@@ -5,6 +5,7 @@
 TypeScript DOM Helper Functions
 
 ## Why?
+
 JS object properties are not minified/mangled by default (and should not be)
 with tools like [terser](https://terser.org), so your JS bundles can have
 multiple appearances of DOM methods like `.addEventListener`, `.parentNode`,
@@ -17,12 +18,20 @@ be mangled by wrapping common DOM methods and properties in functions so that we
 only have methods like `.addEventListener` show up once in our bundled JS
 output.
 
+Also of note is that the functions' arguments are ordered from least likely to
+change to most likely to change ("functional style") so that you can partially
+apply arguments to functions via something like `.bind()` and get greater code
+reuse. There are very few objects accepted in order to keep build sizes as small
+as possible.
+
 ## Installation
 
 ```js
 λ npm i @rpearce/ts-dom-fns
 ```
+
 or
+
 ```js
 λ yarn add @rpearce/ts-dom-fns
 ```
@@ -34,7 +43,6 @@ or
 * [blur](./source/blur.ts)
 * [cloneElement](./source/cloneElement.ts)
 * [createElement](./source/createElement.ts)
-* [customTypes](./source/customTypes.ts)
 * [focus](./source/focus.ts)
 * [forEachSibling](./source/forEachSibling.ts)
 * [getAttribute](./source/getAttribute.ts)
@@ -42,22 +50,36 @@ or
 * [getComputedStyle](./source/getComputedStyle.ts)
 * [getNaturalHeight](./source/getNaturalHeight.ts)
 * [getNaturalWidth](./source/getNaturalWidth.ts)
+* [getNextSibling](./source/getNextSibling.ts)
 * [getOffsetHeight](./source/getOffsetHeight.ts)
 * [getOffsetWidth](./source/getOffsetWidth.ts)
 * [getParentNode](./source/getParentNode.ts)
-* [getScaleToWindowMax](./source/getScaleToWindowMax.ts)
+* [getPreviousSibling](./source/getPreviousSibling.ts)
 * [getScaleToWindow](./source/getScaleToWindow.ts)
-* [getStyleProperty](./source/getStyleProperty.ts)
+* [getScaleToWindowMax](./source/getScaleToWindowMax.ts)
 * [getStyle](./source/getStyle.ts)
+* [getStyleProperty](./source/getStyleProperty.ts)
 * [getWindowInnerHeight](./source/getWindowInnerHeight.ts)
 * [getWindowInnerWidth](./source/getWindowInnerWidth.ts)
+* [getWindowPageXOffset](./source/getWindowPageXOffset.ts)
+* [getWindowPageYOffset](./source/getWindowPageYOffset.ts)
+* [insertAdjacentElement](./source/insertAdjacentElement.ts)
+* [isEscapeKey](./source/isEscapeKey.ts)
+* [raf](./source/raf.ts)
 * [removeAttribute](./source/removeAttribute.ts)
 * [removeChild](./source/removeChild.ts)
+* [removeDataAttributes](./source/removeDataAttributes.ts)
 * [removeEventListener](./source/removeEventListener.ts)
+* [replaceChild](./source/replaceChild.ts)
 * [setAttribute](./source/setAttribute.ts)
+* [setInnerHTML](./source/setInnerHTML.ts)
+* [setInnerText](./source/setInnerText.ts)
 * [setStyleProperty](./source/setStyleProperty.ts)
+* [setTimeout](./source/setTimeout.ts)
+* [stopPropagation](./source/stopPropagation.ts)
 
 ## Usage
+
 Use only the functions you want to, and the rest should get tree-shaken out by
 your build tool.
 
